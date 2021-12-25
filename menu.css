@@ -1,0 +1,129 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #264653;
+}
+
+body {
+    margin: 0;
+    background-color: #f4a261;
+    color: #495057;
+}
+
+.mainHeader {
+    margin-top: 3rem;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    font-weight: 700;
+} 
+
+.title h5 {
+    color: #e76f51;
+}
+
+.nav {
+    text-align: center;
+}
+
+.navItems {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    padding-top: 50px;
+}
+
+.navItems li {
+    float: left;
+}
+
+.navItems li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #264653;
+}
+
+li a:hover:not(.active) {
+    background-color: #e9c46a;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #e76f51;
+    border-radius: 10px;
+}
+
+/* Menu Items ------------------------------------- */
+
+.appetizers, .meat, .noodle, .riceDish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.noodleList, .rice {
+    order: 2;
+    margin-right: 2rem;
+}
+
+.appetizerList, .beefChicken {
+    margin-left: 2rem;
+}
+
+
+#goicuon, #meatImg {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#noodleImg, #riceImg {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 2rem;
+    order: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.viet {
+    color: red;
+}
+.price {
+    color: green;
+}
+
+@media (max-width: 1000px) {
+    
+    .appetizers, .meat, .noodle, .riceDish {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1rem;
+    }
+
+    #goicuon, #meatImg,#riceImg, #noodleImg {
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .noodleList, .rice,.appetizerList, .beefChicken  {
+        margin: 0;
+    }
+
+    #noodleImg{
+        order: 2;
+    }
+    .noodleList {
+        order: 1;
+    }
+
+}
+
+
